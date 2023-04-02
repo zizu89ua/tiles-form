@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>form</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.3.1/dist/css/datepicker.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.3.1/dist/js/datepicker-full.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.3.1/dist/css/datepicker-bs5.min.css">
+	<style type="text/css">
+		.datepicker{
+			width: 100%;
+		}
+		.datepicker-view{
+			width:  100%;
+		}
+		.calendar-list__item{
+			font-size: 18px;
+			font-weight: 600;
+		}
+		.calendar-time__item{
+			cursor: pointer;
+		}
+		.calendar-time__item:hover{
+			background: #d2f7e5;
+		}
+		.form-floating > label{
+			left: 0.775rem;
+		}
+		.submit-button{
+			width: 100%;
+		}
+		@media(min-width: 768px){
+			.submit-button{
+				width: 25%;
+			}
+		}
+	</style>
+
+</head>
+<body>
+	<div class="container">
+		<div class="text-center">
+			<h1>Some title</h1>
+		</div>
+		<form >
+			<div class="border rounded row px-3 py-5">
+				<div class="col-md-4 col-12">
+					<div id="form-date" ></div>
+				</div>
+				<div class="col-md-8 col-12 ">
+					<div>
+						<ul class="list-unstyled calendar-list">
+							<li class="calendar-list__item">Selected day: Monday, April 3</li>
+							<li class="calendar-list__item">Selected time: 9:00 AM</li>
+						</ul>
+					</div>
+					<div class="row row-cols-3 g-3 mt-3 mt-md-0">
+						<div class="col text-center">
+							<div class="p-3 border rounded calendar-time__item">9-00 AM</div>
+						</div>
+						<div class="col text-center ">
+							<div class="p-3 border rounded bg-success text-white fw-bold">10-00 AM</div>
+						</div>
+						<div class="col text-center">
+							<div class="p-3 border rounded calendar-time__item">10-30 AM</div>
+						</div>
+						<div class="col text-center">
+							<div class="p-3 border rounded calendar-time__item">11-00 AM</div>
+						</div>
+						<div class="col text-center">
+							<div class="p-3 border rounded calendar-time__item">12-00 PM</div>
+						</div>
+						<div class="col text-center">
+							<div class="p-3 border rounded calendar-time__item">1-30 PM</div>
+						</div>
+						<div class="col text-center">
+							<div class="p-3 border rounded calendar-time__item">2-00 PM</div>
+						</div>
+						<div class="col text-center">
+							<div class="p-3 border rounded calendar-time__item">3-00 PM</div>
+						</div>
+						<div class="col text-center">
+							<div class="p-3 border rounded calendar-time__item">4-00 PM</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+			<div class="border rounded row px-3 py-5 mt-4">
+				<div class="form-floating mb-3 col-12 col-md-6">
+					<input type="text" class="form-control" id="name" placeholder="First Name">
+					<label for="name">First Name</label>
+				</div>
+				<div class="form-floating mb-3 col-12 col-md-6">
+					<input type="text" class="form-control" id="lastname" placeholder="Last Name">
+					<label for="lastname">Last Name</label>
+				</div>
+				<div class="form-floating mb-3 col-12 col-md-6">
+					<input type="text" class="form-control" id="phone" placeholder="Phone">
+					<label for="phone">Phone</label>
+				</div>
+				<div class="form-floating mb-3 col-12 col-md-6">
+					<input type="email" class="form-control" id="email" placeholder="name@example.com">
+					<label for="email">Email address</label>
+				</div>
+				<div class="col-12 mb-3">
+					<p>What project are you working on? Select all that apply. *</p>
+					<div class="form-check">
+						<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked1">
+						<label class="form-check-label" for="flexCheckChecked1">
+							Kitchen
+						</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked2" >
+						<label class="form-check-label" for="flexCheckChecked2">
+							Bathroom
+						</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked3" >
+						<label class="form-check-label" for="flexCheckChecked3">
+							Entryway
+						</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked4" >
+						<label class="form-check-label" for="flexCheckChecked4">
+							Tiled Patio or Porch
+						</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked5" >
+						<label class="form-check-label" for="flexCheckChecked5">
+							New Construction
+						</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked6" >
+						<label class="form-check-label" for="flexCheckChecked6">
+							Waterproofing
+						</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked7" >
+						<label class="form-check-label" for="flexCheckChecked7">
+							Repairing Damage
+						</label>
+					</div>
+
+				</div>
+
+				<div class="mb-3 col-12">
+					<label for="formFile" class="form-label">Upload anything we might find helpful: pictures of your project, blueprints, cabinet drawings, etc.</label>
+					<input class="form-control form-control-lg" type="file" id="formFile">
+				</div>
+				<div class="form-floating mb-3 col-12">
+
+					<textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+					<label for="floatingTextarea2">Comments</label>
+				</div>
+				<div class="col-12 text-center text-md-end">
+					
+					<button type="button" class="btn btn-success submit-button">Submit</button>
+				</div>
+				
+			</div>
+
+			
+		</form>
+	</div>
+</body>
+<script type="text/javascript">
+	const elem = document.getElementById('form-date');
+	const datepicker = new Datepicker(elem, {
+  // ...options
+	}); 
+	const day = document.querySelectorAll('.datepicker-cell');
+	day.forEach((el) => {
+		el.addEventListener('click', function(e){
+			console.log(datepicker.getDate())
+		});
+	});
+
+</script>
+</html>
